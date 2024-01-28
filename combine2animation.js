@@ -67,7 +67,7 @@ assetLoader.load(peopleURL.href,function(gltf){
 const clock = new THREE.Clock()
 function animate(){
     requestAnimationFrame( animate );
-    // Get the time elapsed since the last frame    
+    // 獲取自上一幀以來的過去時間 
     if ( mixer !== undefined ) mixer.update( clock.getDelta() )    
     renderer.render(scene,camera)
 }
